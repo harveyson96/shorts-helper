@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "f19e9e1bacfb55dbb62b4c167b100161"
+name = "shorts-helper"
+handle = "shorts-helper"
+application_url = "https://injured-robinson-rocky-stories.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "2023-test-harvey.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://injured-robinson-rocky-stories.trycloudflare.com/auth/callback",
+  "https://injured-robinson-rocky-stories.trycloudflare.com/auth/shopify/callback",
+  "https://injured-robinson-rocky-stories.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
